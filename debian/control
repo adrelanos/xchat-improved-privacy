@@ -14,7 +14,7 @@ Standards-Version: 3.9.4
 
 Package: xchat-improved-privacy
 Architecture: all
-Depends: ${misc:Depends}
+Depends: psmisc, sudo, ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
 Description: Improves XChat Privacy Settings
