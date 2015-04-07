@@ -1,3 +1,9 @@
+xchat-improved-privacy (3:0.9-1) unstable; urgency=low
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 07 Apr 2015 17:43:26 +0000
+
 xchat-improved-privacy (3:0.8-1) unstable; urgency=low
 
   * New upstream version (local package).
