@@ -14,6 +14,11 @@ error_handler() {
 
 trap error_handler ERR
 
+if [ "$(id -u)" == "0" ]; then
+      true "Do not run as root!"
+      exit 112
+fi
+
 true "INFO: Resetting your IRC XChat identity..."
 killall xchat || true
 
@@ -28,8 +33,8 @@ fi
 ## https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
 
 ## Copy config files.
-sudo -u user mkdir --parents /home/user/.xchat2
-sudo -u user cp -r /etc/skel/.xchat2 /home/user/
+mkdir --parents /home/user/.xchat2
+cp -r /etc/skel/.xchat2 /home/user/
 
 true "INFO: Done."
 true "INFO: A backup can be found: $backup_folder - feel free to delete it."
