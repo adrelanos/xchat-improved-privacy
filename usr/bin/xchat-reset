@@ -7,20 +7,29 @@
 ## Enable verbose output.
 set -x
 
+error_handler() {
+   true "ERROR!"
+   exit 1
+}
+
+trap error_handler ERR
+
 true "INFO: Resetting your IRC XChat identity..."
 killall xchat || true
 
 ## Make a backup
 datestring="$(date '+%F-%H:%M:%S')"
 backup_folder="/home/user/xchat_${datestring}"
-mv /home/user/.xchat2 "$backup_folder" || true
+if [ -d /home/user/.xchat2 ]; then
+   mv /home/user/.xchat2 "$backup_folder"
+fi
 
 ## XChat settings from:
 ## https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
 
 ## Copy config files.
 sudo -u user mkdir --parents /home/user/.xchat2
-sudo -u user cp -r /usr/share/xchat-improved-privacy/.xchat2/* /home/user/.xchat2/
+sudo -u user cp -r /etc/skel/.xchat2 /home/user/
 
 true "INFO: Done."
 true "INFO: A backup can be found: $backup_folder - feel free to delete it."
