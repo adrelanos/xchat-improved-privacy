@@ -24,17 +24,17 @@ killall hexchat || true
 
 ## Make a backup
 datestring="$(date '+%F-%H:%M:%S')"
-backup_folder="/home/user/hexchat_${datestring}"
-if [ -d /home/user/.config/hexchat ]; then
-   mv /home/user/.config/hexchat "$backup_folder"
+backup_folder=~/hexchat_${datestring}
+if [ -d ~/.config/hexchat ]; then
+   mv ~/.config/hexchat "$backup_folder"
 fi
 
 ## XChat settings from:
 ## https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
 
 ## Copy config files.
-mkdir --parents /home/user/.config/hexchat
-cp -r /etc/skel/.config/hexchat /home/user/.config/
+mkdir --parents ~/.config/hexchat
+cp -r /etc/skel/.config/hexchat ~/.config/
 
 true "INFO: Done."
 true "INFO: A backup can be found: $backup_folder - feel free to delete it."

@@ -24,17 +24,17 @@ killall xchat || true
 
 ## Make a backup
 datestring="$(date '+%F-%H:%M:%S')"
-backup_folder="/home/user/xchat_${datestring}"
-if [ -d /home/user/.xchat2 ]; then
-   mv /home/user/.xchat2 "$backup_folder"
+backup_folder=~/xchat_${datestring}
+if [ -d ~/.xchat2 ]; then
+   mv ~/.xchat2 "$backup_folder"
 fi
 
 ## XChat settings from:
 ## https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
 
 ## Copy config files.
-mkdir --parents /home/user/.xchat2
-cp -r /etc/skel/.xchat2 /home/user/
+mkdir --parents ~/.xchat2
+cp -r /etc/skel/.xchat2 ~/
 
 true "INFO: Done."
 true "INFO: A backup can be found: $backup_folder - feel free to delete it."
