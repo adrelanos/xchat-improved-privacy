@@ -3,4 +3,5 @@
 ## See the file COPYING for copying conditions.
 
 ## config-package-dev issue
+## http://debathena.mit.edu/trac/ticket/936
 xchat-improved-privacy: package-contains-empty-directory usr/share/xchat-improved-privacy/
