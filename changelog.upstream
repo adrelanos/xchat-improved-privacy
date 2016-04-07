@@ -1,3 +1,78 @@
+commit 0e33f9bfb0243f7e304960518241d5a8c76284b5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 19:30:42 2016 +0000
+
+    comment
+
+commit 4b89d3e56e94dd9920672ba9992d9f077a5719aa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:38:25 2016 +0000
+
+    no longer hardcode to /home/user in hexchat-reset / xchat-reset, use ~ instead
+
+commit 7b7ef0fb3de1256da9ebc6180758f8def8d96587
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:34:13 2016 +0000
+
+    added hexchat-reset man page
+
+commit 26a5feaab1c3abf6afec1f83e5230b2e9496ca25
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:29:53 2016 +0000
+
+    implemented etc/skel/.config/hexchat which is a copy of /etc/skel/.xchat2
+
+commit e3463980dfdb630656bd2c8f68ab860f6edaea56
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:28:12 2016 +0000
+
+    Revert "implemented /etc/skel/.config/hexchat by using a Debian packaging '.links' file"
+    
+    This reverts commit 59b824424accb64942866727dfa084986d33a1cb.
+    
+    Symlinks in /etc/skel are problematic,
+    because those would be copied as symlinks, not files.
+
+commit b691bf845b9c515df1d4fc0f524da33a5df3c93a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:27:40 2016 +0000
+
+    added hexchat-reset tool
+
+commit 59b824424accb64942866727dfa084986d33a1cb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:05:13 2016 +0000
+
+    implemented /etc/skel/.config/hexchat by using a Debian packaging '.links' file
+
+commit 069356664516584480165a3a75c81e4f698500cf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jan 4 18:02:15 2016 +0000
+
+    fixed lintian warning
+
+commit b334cd782bb22958b473504e7abae70e2878540e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 3 22:45:20 2015 +0000
+
+    no more need for hardcoded "sudo -u user", using not-root check instead
+
+commit aadea76e21b3804c053338bc9449b6c7962a91dd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 3 22:07:47 2015 +0000
+
+    no longer write to home folder directly; use /etc/skel;
+    
+    https://phabricator.whonix.org/T419
+    
+    proper error handling in xchat-reset
+
+commit 516e2881667dcc1f98a41742dac860082907c9ce
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 25 14:08:42 2015 +0000
+
+    bumped changelog version
+
 commit a3c13e974ebd9531ee86d4e9bc9aeef9e590aad7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jun 3 15:00:54 2015 +0000
