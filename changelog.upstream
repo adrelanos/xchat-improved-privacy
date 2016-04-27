@@ -1,3 +1,28 @@
+commit 6bc6d90e1ba400f831536208ac0b317954e556bb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 26 20:29:08 2016 +0000
+
+    dcc_auto_recv = 0
+    
+    https://phabricator.whonix.org/T40
+
+commit d91d06969170d704eba214faaeadf52c551b9143
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 26 20:25:43 2016 +0000
+
+    renamed files to match hexchat
+    
+    renamed:    xchat.conf -> hexchat.conf
+    renamed:    servlist_.conf -> servlist.conf
+    
+    https://phabricator.whonix.org/T40
+
+commit 666e2eb8d3a6e179fc8d781675155456561af46f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 22:55:03 2016 +0000
+
+    bumped changelog version
+
 commit 0e33f9bfb0243f7e304960518241d5a8c76284b5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 4 19:30:42 2016 +0000
