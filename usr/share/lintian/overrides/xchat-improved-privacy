@@ -4,3 +4,6 @@
 ## config-package-dev issue
 ## http://debathena.mit.edu/trac/ticket/936
 xchat-improved-privacy: package-contains-empty-directory usr/share/xchat-improved-privacy/
+
+## The whole point of the package.
+xchat-improved-privacy: package-contains-file-in-etc-skel etc/skel/*
