@@ -16,7 +16,7 @@ Architecture: all
 Depends: psmisc, sudo, ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
-Description: Improves XChat Privacy Settings
+Description: Improves HexChat Privacy Settings
  As per: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
  .
  Moves the following files:
