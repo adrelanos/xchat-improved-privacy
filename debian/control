@@ -17,7 +17,7 @@ Depends: psmisc, sudo, ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
 Description: Improves XChat Privacy Settings
- As per https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat.
+ As per: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat
  .
  Moves the following files:
   - /usr/lib/xchat/plugins/python.so
